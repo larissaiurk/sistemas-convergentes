@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/app.ts",
+    "start": "npx ts-node src/app.ts",
     "dev:server": "ts-node-dev --ignore-watch node_modules src/app.ts",
     "knex:seed": "knex --knexfile knexfile.ts seed:run",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
