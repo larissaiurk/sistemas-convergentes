@@ -14,7 +14,7 @@ export async function up(knex: Knex) {
     table.decimal('preco')
     table.integer('categoria_id')
       .notNullable()
-      .references('ID')
+      .references('id')
       .inTable('CATEGORIA_PRODUTOS')
   });
 };

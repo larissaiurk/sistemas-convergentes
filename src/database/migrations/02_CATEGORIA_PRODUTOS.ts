@@ -6,7 +6,7 @@ export async function up(knex: Knex) {
     table.string('nome').notNullable();
     table.integer('solucao_id')
       .notNullable()
-      .references('ID')
+      .references('id')
       .inTable('SOLUCOES_PRODUTOS')   
   });
 };
