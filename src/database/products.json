@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Pão Italiano",
+    "description": "A linha de Pães Especiais Reforpan permite ao padeiro desenvolver novas receitas em novos sabores e formatos.",
+    "price": 1,
+    "measurementUnit": "kg",
+    "category": {
+      "id": 1,
+      "name": "Pães especiais"
+    }
+  },
+  {
+    "name": "Pão De Ciabatta",
+    "description": "A linha de Pães Especiais Reforpan permite ao padeiro desenvolver novas receitas em novos sabores e formatos.",
+    "price": 1.2,
+    "measurementUnit": "kg",
+    "category": {
+      "id": 1,
+      "name": "Pães especiais"
+    }
+  },
+  {
+    "name": "Mistura Pães Multimacios",
+    "description": "A linha de Pães Especiais Reforpan permite ao padeiro desenvolver novas receitas em novos sabores e formatos.",
+    "price": 1.5,
+    "measurementUnit": "kg",
+    "category": {
+      "id": 1,
+      "name": "Pães especiais"
+    }
+  }
+]

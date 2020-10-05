@@ -1,0 +1,37 @@
+{
+  "name": "exemplo-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev:server": "ts-node-dev --ignore-watch node_modules src/app.ts",
+    "knex:seed": "knex --knexfile knexfile.ts seed:run",
+    "knex:migrate": "knex --knexfile knexfile.ts migrate:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "-": "0.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.1",
+    "js-yaml": "^3.14.0",
+    "knex": "^0.21.5",
+    "multer": "^1.4.2",
+    "save-dev": "0.0.1-security",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/multer": "^1.4.4",
+    "@types/node": "^14.11.2",
+    "nodemon": "^2.0.4",
+    "sucrase": "^3.15.0",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.9.3"
+  }
+}
