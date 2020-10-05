@@ -4,6 +4,7 @@ import multerConfig from './config/multer';
 
 import ProductsController from './controllers/ProductsController';
 import ClientesController from './controllers/ClientesController';
+import CategoriaController from './controllers/CategoriaController';
 
 const routes = express.Router();
 const upload = multer({ storage: multerConfig.storage, fileFilter: multerConfig.fileFilter });
@@ -28,5 +29,7 @@ routes.put('/clientes/:id', ClientesController.update);
 routes.delete('/clientes/:id', ClientesController.delete);
 
 routes.get('/produtos/quantidade-categoria', ProductsController.qtdProdutosPorCategoria);
+
+routes.get('/', CategoriaController.index);
 
 export default routes;

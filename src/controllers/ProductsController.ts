@@ -30,9 +30,15 @@ class ProductsController {
     } = request.body;
 
     const trx = await knex.transaction();
+    
+    let imagemProduto = null;
 
+    if(request.file && request.file.filename){
+      imagemProduto = request.file.filename;
+    }
+    
     const produto = {
-      image: request.file.filename,
+      image: imagemProduto,
       nome, 
       descricao, 
       indicacao_uso, 
