@@ -17,7 +17,7 @@ app.use('/uploads', express.static(path.resolve(__dirname, 'uploads', 'produtos'
 
 import serverPort  from './resources/readConfiguration'; 
 
-app.listen(serverPort.port(), () => {
+app.listen(process.env.PORT || 3333, () => {
   console.log('🚀️ Backend started 🚀️ ');
 }); 
 
