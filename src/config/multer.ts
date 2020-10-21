@@ -8,9 +8,7 @@ export default {
     destination: path.resolve(__dirname, '..', 'uploads', 'produtos'),
     filename(request: Request, file: Express.Multer.File, callback: (error: Error | null, filename: string) => void) {
       const hash = crypto.randomBytes(6).toString('hex');
-
       const fileName = `${hash}-${file.originalname}`;
-
       callback(null, fileName);
     },
   }),

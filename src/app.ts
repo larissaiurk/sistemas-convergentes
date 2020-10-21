@@ -15,8 +15,6 @@ app.use(routes);
 
 app.use('/uploads', express.static(path.resolve(__dirname, 'uploads', 'produtos')));
 
- 
-
 app.listen(process.env.PORT || 3333, () => {
   console.log('🚀️ Backend started 🚀️ ');
 }); 
